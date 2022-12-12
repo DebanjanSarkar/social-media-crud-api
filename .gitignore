@@ -1,0 +1,5 @@
+other_proj/
+.env
+venv/
+*__pycache__
+
