@@ -26,7 +26,12 @@ app.add_middleware(
 # Demo Path operation on the root path, for testing purposes.
 @app.get("/")
 async def home():
-    return {"detail": "This API is developed by Debanjan Sarkar, using FastAPI framework."}
+    return {"detail": """
+    This API is developed by Debanjan Sarkar, using FastAPI framework.
+    I am a student of Jalpaiguri Government Engineering College, and  an aspiring developer.
+    
+    Head towards the "/docs" endpoint to interact and see what this API does... 
+    """}
 
 # Path operations related to user functionality, i.e., user registrations
 app.include_router( user.router )
